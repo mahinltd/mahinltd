@@ -45,8 +45,12 @@
 
     <footer class="footer">
         <div class="container footer-bottom">
-            <p>&copy; 2025 Mahin Ltd Developed by Tanvir</p>
+            <p>&copy; <span id="copyright-year"></span> Mahin Ltd Developed by Tanvir</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
